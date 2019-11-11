@@ -1,0 +1,18 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'db/**/*.rb'
+    - 'vendor/bundle/**/*'
+    - 'bin/**/*'
+  DisplayCopNames: true
+  CacheRootDirectory:
+    - 'tmp/'
+
+Metrics/LineLength:
+  Max: 120
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
