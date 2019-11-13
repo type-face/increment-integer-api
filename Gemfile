@@ -7,6 +7,8 @@ ruby '2.5.3'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise_token_auth'
+gem 'fast_jsonapi'
+gem 'jsonapi-rails'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 5.2.3'
