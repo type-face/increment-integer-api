@@ -12,7 +12,7 @@ class ApplicationController < ActionController::API
       request.content_type == 'application/vnd.api+json'
   end
 
-  def unsupported_media_type(exception)
+  def unsupported_media_type
     render body: nil, status: :unsupported_media_type, head: :no_content
   end
 
