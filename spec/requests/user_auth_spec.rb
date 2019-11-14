@@ -6,7 +6,7 @@ RSpec.describe 'User Authentication', type: :request do
   it 'allows user to register' do
     params = { email: 'test123@example.com', password: 'password123' }
     post '/auth', params: params, as: :json
-    expect(response.status).to eq 200
+    expect(response.status).to eq 201
   end
 
   context 'registered user', json_api_headers: true do
